@@ -75,7 +75,10 @@ header{position:sticky; top:0; backdrop-filter:saturate(150%) blur(8px); backgro
 .badge{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#001224; background:#9bd8ff; padding:6px 10px; border-radius:999px}
 .list{margin:0; padding-left:18px}
 .list li{margin:6px 0}
-
+.quote{display:flex; gap:16px; align-items:flex-start}
+.quote svg{flex:0 0 auto}
+.footer{padding:34px 0 60px; color:#cfe0ff; opacity:.9}
+.footer a{color:#a9c1e8}
 
 /* Mobile */
 @media (max-width: 980px){
