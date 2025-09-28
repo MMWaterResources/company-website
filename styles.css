@@ -63,8 +63,6 @@ header{position:sticky; top:0; backdrop-filter:saturate(150%) blur(8px); backgro
 .card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.1); box-shadow:var(--shadow); border-radius:var(--radius)}
 .tile{padding:22px}
 .tile h3{margin:.2rem 0 .4rem; font-size:20px}
-
-
 /* Toolkit */
 .muted{color:#cfe0ff; opacity:.85}
 .bullets{display:grid; gap:10px; margin:18px 0}
