@@ -36,7 +36,10 @@ header{position:sticky; top:0; backdrop-filter:saturate(150%) blur(8px); backgro
 .cta{background:linear-gradient(135deg, var(--accent), #4cc9f0); color:#001224; font-weight:700}
 
 /* Hero Block */
-.hero{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; padding:72px 0 28px}
+.hero{display:grid;
+	grid-template-columns:1.1fr .9fr;
+	gap:28px;
+	padding:36px 0 0px}
 .hero h2{font-size:42px; line-height:1.15; margin:0 0 10px}
 .kicker{display:inline-block; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); font-size:12px; margin-bottom:8px}
 .pad{padding:28px}
@@ -56,11 +59,15 @@ header{position:sticky; top:0; backdrop-filter:saturate(150%) blur(8px); backgro
   box-shadow: 0 0 0 4px rgba(18,179,235,.15);
   border-radius: var(--radius);
   transition: outline 0.6s ease, box-shadow 0.6s ease;
-}
+	}
 /* Layout */
 .grid-2{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
 .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
-.card{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border:1px solid rgba(255,255,255,.1); box-shadow:var(--shadow); border-radius:var(--radius)}
+.card{
+	background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+	border:1px solid rgba(255,255,255,.1);
+	box-shadow:var(--shadow);
+	border-radius:var(--radius)}
 .tile{padding:22px}
 .tile h3{margin:.2rem 0 .4rem; font-size:20px}
 /* Toolkit */

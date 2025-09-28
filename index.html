@@ -39,7 +39,8 @@
 			<a href="index.html#services">Services</a>
 			<a href="index.html#about">About</a>
 			<a href="index.html#contact" class="cta">Contact</a>
-		</div>		
+		</div>
+		
 	</header>
 	<main>
 		<section class="container hero">
@@ -170,5 +171,17 @@
 			<div><a href="#privacy">Privacy</a> • <a href="#terms">Terms</a></div>
 		</div>
 	</footer>
+	<script>
+		// Simple mobile menu toggle
+		const btn = document.getElementById('menuBtn');
+		const mm = document.getElementById('mobileMenu');
+		btn?.addEventListener('click', () => {
+		  const open = mm.style.display === 'block';
+		  mm.style.display = open ? 'none' : 'block';
+		  btn.setAttribute('aria-expanded', String(!open));
+		});
+		// Year stamp
+		document.getElementById('y').textContent = new Date().getFullYear();
+	</script>	
 </body>
 </html>
