@@ -1,5 +1,5 @@
 <!doctype html>
-<html land="en">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -132,20 +132,29 @@
 			<p class="muted">Let’s discuss your operations, regulatory path, or governance needs. We’re happy to start with a short scoping call when we open our doors in February, 2026.</p>
 		</section>
 	</main>
-	<footer">
+	<footer>
 		<div class="container footer" style="display:flex; gap:12px; flex-wrap:wrap; align-items:center; justify-content:space-between">
 			<div>&copy; <span id="y"></span> MM Water Resources, LLC • All rights reserved • v<span id="ver"></span></div>
 			<div><a href="#privacy">Privacy</a> • <a href="#terms">Terms</a></div>
 		</div>
 	</footer>
 	<script>
-		// Simple mobile menu toggle
+		// mobile menu toggle
 		const btn = document.getElementById('menuBtn');
-		const mm = document.getElementById('mobileMenu');
+		const mm  = document.getElementById('mobileMenu');
+
+		// Toggle menu open/closed
 		btn?.addEventListener('click', () => {
-		  const open = mm.style.display === 'block';
-		  mm.style.display = open ? 'none' : 'block';
-		  btn.setAttribute('aria-expanded', String(!open));
+			const isOpen = mm.classList.toggle('open');
+			btn.setAttribute('aria-expanded', String(isOpen));
+		});
+
+		// Close the menu after a link is tapped (nice mobile UX)
+		mm.querySelectorAll('a').forEach(a => {
+			a.addEventListener('click', () => {
+				mm.classList.remove('open');
+				btn.setAttribute('aria-expanded', 'false');
+			});
 		});
 		// Year stamp
 		document.getElementById('y').textContent = new Date().getFullYear();
