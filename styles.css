@@ -83,7 +83,9 @@ a:hover{text-decoration:underline}
 .cols-1{grid-template-columns:1fr}
 .grid-2{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
 .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
-/* Cards within a grid */
+/* Tile: Elements within a grid */
+
+/* Card: A text-based tile */
 .card{
   background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
   border: 1px solid rgba(255,255,255,.1);
@@ -162,7 +164,7 @@ header{position:fixed; top:0; width:100%; backdrop-filter:saturate(150%) blur(8p
 	.mobile-menu.open {display: block}	/* visible when toggled */
 	
 	.hero{grid-template-columns:1fr}
-	.hero > .illus{display:none}
+	.hero .illus{display:none}
 	
 	.grid-3{grid-template-columns:1fr}
 	.grid-2{grid-template-columns:1fr}
