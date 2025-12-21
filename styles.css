@@ -80,7 +80,7 @@ a:hover{text-decoration:underline}
 	gap:var(--gap)}
 /* Grids: Elements horizontally within a stack */
 .grid{display:grid}
-.cols-1{grid-template-columns:1fr}
+.grid-1{grid-template-columns:1fr}
 .grid-2{display:grid; grid-template-columns:repeat(2,1fr); gap:18px}
 .grid-3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
 /* Tile: Elements within a grid */
@@ -93,17 +93,22 @@ a:hover{text-decoration:underline}
   box-shadow: 0 8px 28px rgba(0,0,0,.35);
   padding:var(--card-pad)}
 .card h3{margin:.2rem 0 .4rem; font-size:20px}
-.card-media{ overflow: hidden; }
-.card-media > img, .card-media > .wave{
-  width: 100%; height: 100%; display: block; object-fit: cover;
-  border-radius: var(--radius);}
+/* .card-media{ overflow: hidden; } */
+/* .card-media > img, .card-media > .wave{ */
+  /* width: 100%; height: 100%; display: block; object-fit: cover; */
+  /* border-radius: var(--radius);} */
+
 /* Widgets on a card */
-.muted{color:#cfe0ff; opacity:.85}	/* basic text */
+.badge{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#001224; background:#9bd8ff; padding:6px 10px; border-radius:999px}
 .chips{display:grid; gap:10px; margin:18px 0}
 .chip{display:inline-flex; align-items:center; gap:8px; padding:8px 10px; background:rgba(18,179,235,.12); border:1px solid rgba(18,179,235,.25); color:#bfeaff; border-radius:999px; font-size:12px}
-.badge{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#001224; background:#9bd8ff; padding:6px 10px; border-radius:999px}
+.figure-caption{}
+.figure-graphic{width:100%}
+.graphic-left{display:grid; grid-template-columns: 1fr 1.618fr; gap:18px}
+.graphic-right{display:grid; grid-template-columns: 1.618fr 1fr; gap:18px}
 .list{margin:0; padding-left:18px}
 .list li{margin:6px 0}
+.muted{color:#cfe0ff; opacity:.85}	/* basic text */
 .quote{display:flex; gap:16px; align-items:flex-start}
 .quote svg{flex:0 0 auto}
 .stats{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:18px}
@@ -168,4 +173,6 @@ header{position:fixed; top:0; width:100%; backdrop-filter:saturate(150%) blur(8p
 	
 	.grid-3{grid-template-columns:1fr}
 	.grid-2{grid-template-columns:1fr}
+	.graphic-left{grid-template-columns:1fr}
+	.graphic-right{grid-template-columns:1fr}
 }
